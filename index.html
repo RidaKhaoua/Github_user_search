@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link icon -->
+    <!-- <link rel="icon" href="" /> -->
+    <!-- link font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- link normalise -->
+    <link rel="stylesheet" href="./css/normalise.css">
+    <!-- link font awsome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h3 class="title">devfinder</h3>
+            <div class="icon-light">
+            <i class="far fa-lightbulb off" data-light></i>
+            </div>
+        </div>
+        <div class="form">
+            <form action="#">
+                <i class="fas fa-search search"></i>
+                <input type="text" data-input name="" id="" placeholder="Search GitHub username...">
+                <input type="submit" class="button" data-search value ="search" />
+            </form>
+        </div>
+        <div class="content" data-content>
+            <div class="image">
+                <img data-img src="./images/git-hub.svg" alt="git hub logo">
+            </div>
+            <div class="body-content">
+                <div class="infos">
+                    <div class="name" data-name>The name</div>
+                    <div class="date-join" data-date>
+                        join 25 jan 2021
+                    </div>
+                </div>
+                <p class="bio" data-bio>This profile has no bio</p>
+                <div class="statistique">
+                    <div class="repos">
+                        <h4 class="title">repos</h4>
+                        <p data-number-repo>8</p>
+                    </div>
+                    <div class="folowers">
+                        <h4 class="title">folowers</h4>
+                        <p data-number-followrs>38000</p>
+                    </div>
+                    <div class="following">
+                        <h4 class="title">following</h4>
+                        <p data-number-following>9</p>
+                    </div>
+                </div>
+                <div class="found-me">
+                    <div class="left">
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span data-location>sanfransisco</span>
+                        </div>
+                        <div class="link">
+                            <i class="fas fa-link icon"></i>
+                            <a href="" data-link>GO to Repo</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="twitter">
+                            <i class="fab fa-twitter icon"></i>
+                            <a href="#" data-twitter>Not available</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-building icon"></i>
+                            <span data-name-repo>agihub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/functions.js" type="module"></script>
+</body>
+</html>

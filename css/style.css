@@ -1,0 +1,254 @@
+/* Start Generale */
+:root {
+    --bg-color:#141c2f;
+    --sec-bg-color: #1f2a48;
+    --main-color: #4e566d;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s linear;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Small Screen*/
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Mediume Screen  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+   
+   
+}
+/* Larger Screen */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }  
+}
+/* End Generale */
+
+/* change lightin mode */
+.light-mode {
+    background-color: white;
+}
+
+.light-mode-color {
+    color: black;
+    transition: 0.5s linear;
+}
+
+/* start head */
+.container .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+}
+.container .head .title {
+    font-size: 2em;
+}
+
+.container .head .icon-light {
+    cursor: pointer;
+    padding: 8px;
+}
+/* end head */
+
+/* start form */
+.container .form {
+    background-color: var(--sec-bg-color);
+    padding: 0.40em 1em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container .form form {
+    display: flex;
+    align-items: center;
+    gap:18px;
+}
+
+.container .form form .search {
+    color: #224980;
+    font-size: 1.5em;
+}
+.container .form form input:not([type="submit"]) {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    caret-color: white;
+    color: white;
+}
+
+.container .form form input:focus {
+    outline: none;
+}
+
+.container .form form input::placeholder {
+    color: var(--main-color);
+}
+
+.container .form form .button {
+    border: none;
+    background-color: #007aff;
+    color: white;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 6px;
+}
+
+/* end form */
+
+/* start content */
+.container .content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--sec-bg-color);
+    padding: 40px 30px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+@media (max-width:771px) {
+    .container .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.container .content .image img {
+    width: 160px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (max-width:771px) {
+    .container .content .image img {
+        margin: auto;
+        display: block;
+    }
+}
+
+.container .content .body-content {
+    flex: 1;
+}
+
+.container .content .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.container .content .infos .name {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.9em;
+}
+
+.container .content .infos .date-join {
+    color: var(--main-color);
+}
+
+.container .content .bio {
+    color: var(--main-color);
+    margin-bottom: 30px;
+    font-size: 1.3em;
+}
+
+.container .body-content .statistique {
+ background-color: var(--bg-color);
+ padding: 15px;
+ border-radius: 6px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+.container .body-content .statistique .title {
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+
+.container .body-content .statistique p {
+    color: white;
+    font-size: 1.1em;
+}
+
+.container .body-content .found-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+
+.container .body-content .found-me > div {
+    width: 50%;
+}
+
+@media (max-width:771px) {
+    .container .body-content .found-me > div {
+        width: 100%;
+}
+}
+
+.container .body-content .found-me .left > div ,
+.container .body-content .found-me .right > div {
+    margin-bottom: 20px;
+}
+
+.container .body-content .found-me .icon {
+  width: 30px;
+}
+
+.container .body-content .found-me a {
+    color: var(--main-color);
+}
+.container .body-content .found-me  .link a {
+    width:140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--main-color);
+    display: inline-block;
+}
+/* end content */
