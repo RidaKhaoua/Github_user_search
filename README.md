@@ -1,2 +1,2 @@
 # Github_user_search
-get some information about repo of user 
+get some informations about repo of user 
