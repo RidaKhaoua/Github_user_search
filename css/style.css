@@ -100,6 +100,7 @@ body{
 .container .form form {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap:4px;
 }
 
@@ -107,12 +108,20 @@ body{
     color: #224980;
     font-size: 1.5em;
 }
+
+@media (max-width:771px) {
+    .container .form form .search {
+        display: none;
+    }
+}
+
 .container .form form input:not([type="submit"]) {
     flex: 1;
     background-color: transparent;
     border: none;
     caret-color: white;
     color: white;
+    padding: 10px;
 }
 
 .container .form form input:focus {
@@ -131,6 +140,12 @@ body{
     cursor: pointer;
     text-transform: capitalize;
     border-radius: 6px;
+}
+
+@media (max-width:771px) {
+    .container .form form .button {
+        width: 100%;
+    }
 }
 
 /* end form */
