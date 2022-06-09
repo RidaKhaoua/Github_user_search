@@ -92,7 +92,7 @@ body{
 /* start form */
 .container .form {
     background-color: var(--sec-bg-color);
-    padding: 0.35em .60em;
+    padding: 0.35em 0.60em;
     border-radius: 10px;
     margin-bottom: 20px;
 }
