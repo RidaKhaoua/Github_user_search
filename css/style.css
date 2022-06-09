@@ -92,7 +92,7 @@ body{
 /* start form */
 .container .form {
     background-color: var(--sec-bg-color);
-    padding: 0.40em 1em;
+    padding: 0.35em .60em;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -100,7 +100,7 @@ body{
 .container .form form {
     display: flex;
     align-items: center;
-    gap:18px;
+    gap:4px;
 }
 
 .container .form form .search {
@@ -173,6 +173,7 @@ body{
 .container .content .infos {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -184,8 +185,22 @@ body{
     font-size: 1.9em;
 }
 
+@media (max-width:771px) {
+    .container .content .infos .name {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .container .content .infos .date-join {
     color: var(--main-color);
+}
+
+@media (max-width:771px) {
+    .container .content .infos .date-join {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .container .content .bio {
